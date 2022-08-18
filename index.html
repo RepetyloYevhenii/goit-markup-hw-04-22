@@ -22,17 +22,29 @@
             </ul>
         </nav>
        <div class="contact">
-        <a class="contact-header link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="contact-header link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <div class="icon-contact">
+            <svg class="icon-envelope">
+                <use href="./images/icon.svg#icon-envelope"></use>
+            </svg>
+        </div>
+        <a class="contact-header mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <div class="icon-contact">
+            <svg class="icon-smartphone">
+                <use href="./images/icon.svg#icon-smartphone"></use>
+              </svg>
+        </div>
+        <a class="contact-header phone link" href="tel:+380961111111">+38 096 111 11 11</a>
        </div>
     </div>
    </header>
    <main>
     <!-- Секция герой -->
     <section class="hero">
+        <div class="hero-container">
             <h1 class="title-hero">Эффективные решения <br>для вашего бизнеса</h1>
             <a class="button-link link" href="http://">Заказать услугу</a>
             <!-- <button type="button">Заказать услугу</button> -->
+        </div>
     </section>
     <!-- Секция приемущества -->
     <section>
@@ -40,24 +52,43 @@
             <h2 class="caption-non">Приемущества работы с нами</h2>
             <ul class="benefits-list list">
                 <li class="item">
+                    <div class="icon-benefits">
+                        <svg class="icon-antenna">
+                            <use href="./images/icon.svg#icon-antenna" ></use>
+                        </svg>
+                    </div>
                     <h3 class="title uppercase-title">Внимание к деталям</h3>
                     <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li class="item">
+                    <div class="icon-benefits">
+                        <svg class="icon-antenna">
+                            <use href="./images/icon.svg#icon-clock" ></use>
+                        </svg>
+                    </div>
                     <h3 class="title uppercase-title">Пунктуальность</h3>
                     <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li class="item">
+                    <div class="icon-benefits">
+                        <svg class="icon-antenna">
+                            <use href="./images/icon.svg#icon-diagram" ></use>
+                        </svg>
+                    </div>
                     <h3 class="title uppercase-title">Планирование</h3>
                     <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li class="item">
+                    <div class="icon-benefits">
+                        <svg class="icon-antenna">
+                            <use href="./images/icon.svg#icon-astronaut" ></use>
+                        </svg>
+                    </div>
                     <h3 class="title uppercase-title">Современные технологии</h3>
                     <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
-        </div>
-       
+        </div> 
     </section>
     <!-- Секция чем мы занимаемся -->
     <section class="section">
@@ -79,6 +110,40 @@
                     <img class="team-photo" src="./images/team/optim/product_designer.jpeg" alt="Product Designer" width="270">
                     <h3 class="title">Игорь Демьяненко</h3>
                     <p class="text">Product Designer</p>
+                    <Ul class="list social-list">
+                        <li class="social-item">
+                            <a href="http://" class="link">
+                                <svg class="icon-link" width="20px";
+                                height="20px">
+                                    <use href="./images/icon.svg#icon-instagram"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://" class="link">
+                                <svg class="icon-link" width="20px";
+                                height="20px">
+                                    <use href="./images/icon.svg#icon-twitter"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://" class="link">
+                                <svg class="icon-link" width="20px";
+                                height="20px">
+                                    <use href="./images/icon.svg#icon-facebook"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="http://" class="link">
+                                <svg class="icon-link" width="20px";
+                                height="20px">
+                                    <use href="./images/icon.svg#icon-linkedin"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                    </Ul>
                 </li>
                 <li class="item text-centred">
                     <img class="team-photo" src="./images/team/optim/frontend_developer.jpeg" alt="Frontend Developer" width="270">

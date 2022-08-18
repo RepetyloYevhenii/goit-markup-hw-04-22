@@ -132,13 +132,62 @@ color: var(--color-title);
 
 .contact {
     margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
+.icon-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon-envelope {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+}
+
+.icon-smartphone {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px; 
+}
+
+/* .contact .mail::before {
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+
+    background-image: url(../images/SVG/envelope.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+} */
+
+/* .contact .phone::before {
+    content: "";
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+
+    background-image: url(../images/SVG/smartphone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+} */
+
 .contact-header {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-color: var(--color-text);
+ padding-top: 32px;
+ padding-bottom: 32px;
+ display: inline-flex;
+ align-items: center;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 1.14;
+ color: var(--color-text);
 }
 
 .contact-header:hover, 
@@ -171,7 +220,21 @@ color: var(--color-text);
 /* main */
 
 .hero {
-text-align: center;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 
 .title-hero {
@@ -181,8 +244,7 @@ font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 text-transform: uppercase;
-color: #2196F3;
-/* color: var(--color-title-hero); */
+color: var(--color-title-hero);
 }
 
 .title-section {
@@ -208,7 +270,7 @@ line-height: 1.14px;
 font-size: 14px;
 line-height: 1.71;
 color: var(--color-text);
-margin-bottom: 30px;
+margin-bottom: 16px;
 }
 
 .text-centred {
@@ -227,10 +289,58 @@ margin-bottom: 30px;
     padding: 0px;
 }
 
+.benefits-list .item {
+    width: 270px;
+}
+
+.benefits-list .text {
+    margin-bottom: 0px;
+}
+
 .benefits-list .item:not(:last-child) {
     margin-right: 30px;
 }
 
+
+
+
+.icon-benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.icon-antenna {
+    width: 65.32px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.icon-clock {
+    width: 65.96px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.icon-diagram {
+    width: 70px;
+    height: 53.69px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.icon-astronaut{
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
 
 .caption-non {
 display: none;
@@ -269,13 +379,63 @@ display: none;
     justify-content: center;
 }
 
+.team-list .item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-list .item:not(:last-child) {
     margin-right: 30px;
 }
 
 .team-photo {
+    display: block;
     margin-bottom: 30px;
 }
+
+.social-list {
+display: flex;
+justify-content: center;
+margin-bottom: 30px;
+padding: 0;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    /* border-radius: 50%; */
+}
+
+.social-item .link:hover,
+.social-item .link:focus,
+.icon-link:hover, 
+.icon-link:focus {
+    background-color: var(--color-acsent);
+    fill: #ffffff;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-item .link {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon-link {
+    fill: #AFB1B8;
+}
+
+/* .icon-link:hover, 
+.icon-link:focus {
+fill: #ffffff;
+} */
 
 /* footer */
 
